@@ -11,6 +11,16 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 public class LoginTest {
+//What is a log? Helps in capturing info/activities at the time of program execution
+//Types of Logs:
+    //1. info
+    //2. warn
+    //3. error
+    //4. fatal
+// How to generate logs? using Apache log4jAPI(log4j jar)
+//How it works? It reads log 4j configuration from log4j properties file to generate the logs
+// Where to create this file? create inside resources folder source folder
+
     WebDriver driver;
     @BeforeMethod
     public void setUp()
