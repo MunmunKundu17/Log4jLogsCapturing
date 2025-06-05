@@ -1,7 +1,8 @@
 package com.Test;
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,8 +23,9 @@ public class LoginTest {
 // How to generate logs? using Apache log4jAPI(log4j jar)
 //How it works? It reads log 4j configuration from log4j properties file to generate the logs
 // Where to create this file? create inside resources folder source folder
-    public static final Logger LOGGER = LogManager.getLogger(LoginTest.class);
+    private static Logger LOGGER = LogManager.getLogger(LoginTest.class);
     WebDriver driver;
+
     @BeforeMethod
     public void setUp()
     {
@@ -49,17 +51,17 @@ public class LoginTest {
     }
     @Test(priority=2)
     public void freeCRMLogoTest()
-    {   LOGGER.info("Test 2 is started");
+    {  LOGGER.info("Test 2 is started");
         boolean b = driver.findElement(By.xpath("//div[@class='rd-navbar-brand']//span[text()='Free CRM Software']")).isDisplayed();
         Assert.assertTrue(b);
-        LOGGER.info("Test 2 is completed");
+       LOGGER.info("Test 2 is completed");
     }
 
     @AfterMethod
     public void tearDown()
     {
         driver.quit();
-        LOGGER.debug("Browser Instance is closed");
+       LOGGER.debug("Browser Instance is closed");
     }
 
 }
