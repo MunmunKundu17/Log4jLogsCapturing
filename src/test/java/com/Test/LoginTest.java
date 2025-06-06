@@ -23,7 +23,7 @@ public class LoginTest {
 // How to generate logs? using Apache log4jAPI(log4j jar)
 //How it works? It reads log 4j configuration from log4j properties file to generate the logs
 // Where to create this file? create inside resources folder source folder
-    private static Logger LOGGER = LogManager.getLogger(LoginTest.class);
+    private static final Logger LOGGER = LogManager.getLogger(LoginTest.class);
     WebDriver driver;
 
     @BeforeMethod
@@ -55,6 +55,7 @@ public class LoginTest {
         boolean b = driver.findElement(By.xpath("//div[@class='rd-navbar-brand']//span[text()='Free CRM Software']")).isDisplayed();
         Assert.assertTrue(b);
        LOGGER.info("Test 2 is completed");
+       LOGGER.warn("Test Warning Message");
     }
 
     @AfterMethod

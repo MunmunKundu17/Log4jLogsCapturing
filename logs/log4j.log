@@ -1,0 +1,13 @@
+12:15:01.442 [main] INFO  - I am in Info Logging Mode
+12:15:04.078 [main] DEBUG - ChromeDriver setup is completed
+12:15:04.229 [main] DEBUG - Chrome browser is launched
+12:15:12.104 [main] INFO  - Test is started
+12:15:12.131 [main] INFO  - Test 1 is completed
+12:15:12.588 [main] DEBUG - Browser Instance is closed
+12:15:12.594 [main] INFO  - I am in Info Logging Mode
+12:15:14.086 [main] DEBUG - ChromeDriver setup is completed
+12:15:14.212 [main] DEBUG - Chrome browser is launched
+12:15:26.115 [main] INFO  - Test 2 is started
+12:15:26.194 [main] INFO  - Test 2 is completed
+12:15:26.195 [main] WARN  - Test Warning Message
+12:15:26.433 [main] DEBUG - Browser Instance is closed
